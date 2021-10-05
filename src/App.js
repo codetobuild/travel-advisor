@@ -7,6 +7,7 @@ import { getPlacesData, getWeatherData } from "./api/index";
 import Header from "./components/Header/Header";
 import Map from "./components/Map/Map";
 import List from "./components/List/List";
+import Footer from "./components/Footer/Footer";
 
 // component
 function App() {
@@ -34,11 +35,9 @@ function App() {
       setIsLoading(true);
 
       // get weather data from api
-      getWeatherData(coordinates.lat, coordinates.lng)
-        .then((data) => {
-          setWeather(data);
-        })
-       
+      getWeatherData(coordinates.lat, coordinates.lng).then((data) => {
+        setWeather(data);
+      });
 
       // get places data from api
       getPlacesData(type, bounds.sw, bounds.ne).then((data) => {
@@ -85,6 +84,7 @@ function App() {
           />
         </Grid>
       </Grid>
+      <Footer />
     </>
   );
 }
