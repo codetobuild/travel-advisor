@@ -18,7 +18,6 @@ import useStyles from "./styles";
 const PlaceDetails = (props) => {
   const classes = useStyles();
   const { place } = props;
-  console.log(place);
 
   // return jsx
   return (
@@ -36,6 +35,13 @@ const PlaceDetails = (props) => {
         <Typography gutterBottom variant="h5">
           {place.name}
         </Typography>
+        <Box display="flex" justifyContent="space-between">
+          <Rating value={Number(place.rating)} readOnly />
+
+          <Typography gutterBottom variant="subtitle1">
+            Out of {place.num_reviews}
+          </Typography>
+        </Box>
         <Box display="flex" justifyContent="space-between">
           <Typography component="legend">Price</Typography>
           <Typography gutterBottom variant="subtitle1">
@@ -77,20 +83,6 @@ const PlaceDetails = (props) => {
           </Button>
         </CardActions>
       </CardContent>
-      <CardActions>
-        <Button
-          size="small"
-          color="primary"
-          onClick={() => window.open(place.web_url, "_blank")}>
-          Trip Advisor
-        </Button>
-        <Button
-          size="small"
-          color="primary"
-          onClick={() => window.open(place.website, "_blank")}>
-          Website
-        </Button>
-      </CardActions>
     </Card>
   );
 };
