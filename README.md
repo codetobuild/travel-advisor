@@ -1,5 +1,5 @@
 # Travel Advisor 
->Explore Restaurants, Hotels, and Attractions on the Map.
+>Explore Restaurants, Hotels, and Attractions anywhere around the world.
 
 - This application helps you find local Restaurants, Hotels, and Attraction places based on any location on the Map and display its details like rating, location etc. for the best user experience.
 
