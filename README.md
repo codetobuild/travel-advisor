@@ -1,4 +1,11 @@
 # Travel Advisor 
+>Explore Restaurants, Hotels, and Attractions on the Map.
+
+- This application helps you find local Restaurants, Hotels, and Attraction places based on any location on the Map and display its details like rating, location etc. for the best user experience.
+
+- Front-end was developed with Reactjs.
+
+- Google Map API was used to display locations and RapidAPI were used to fetch data.
 
 ### Reactjs project. Currently under development.
 
